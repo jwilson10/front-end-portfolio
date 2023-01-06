@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+body{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.title{
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    margin-right: 30%;
+    font-size: 30px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    line-height: 1.2;
+}
+
+.card{
+    max-width: 600px;
+    display: flex;
+    flex-wrap: no-wrap;
+    /* justify-content: center;
+    align-items: stretch; */
+    margin: 5%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 3%;
+    overflow: hidden;
+}
+
+.photo{
+    background-image: url(images/image-product-desktop.jpg);
+    background-size: cover;
+    width: 50%;
+    height:100%;
+    /* min-width: 50%;
+    min-height: 100%; */
+    /* border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em; */
+}
+
+.contentSection{
+    width: 50%;
+    padding-left: 6%;
+}
+
+.description{
+    font-family: 'Montserrat', sans-serif;
+    color:hsl(228, 12%, 48%);
+    font-size: 14px;
+    margin-right:30%;
+    line-height: 1.6;
+    padding-bottom: 5%;
+}
+
+.flavorText{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color:hsl(228, 12%, 48%);
+    margin-top: 10%;
+}
+
+.prices{
+    display:flex;
+    align-items: center;
+}
+
+.newPrice{
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    color:hsl(158, 36%, 37%);
+    padding-right: 10%;
+}
+
+.oldPrice{
+    font-family: 'Montserrat', sans-serif;
+    color:hsl(228, 12%, 48%);
+    text-decoration-line:line-through;
+    text-decoration-style:solid;
+    text-decoration-color: hsl(228, 12%, 48%);
+    font-size:12px;
+}
+
+.buttonArea{
+    display:flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.addToCart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color:hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    border:none;
+    width:80%;
+    padding:7%;
+    margin-right: 20%;
+    border-radius: .5em;
+}
+
+.addToCart:hover{
+    background-color: hsl(158, 37%, 20%);
+    cursor: pointer;
+}
+
+.cartSVG{
+    padding-right: 10%;
+}
+
+@media screen and (max-width: 500px){
+
+    .card{
+        flex-direction: column;
+        height: 800px;
+    }
+
+    .title{
+        font-size: 26px;
+    }
+
+    .flavorText{
+        font-size:12px;
+    }
+
+    .photo, .contentSection{
+        width: 100%;
+        height:50%;
+    }
+
+    .photo{
+        background-image: url(images/image-product-mobile.jpg) no-repeat center;
+        background-size: cover;
+        width: 100%;
+        height:50%;
+    }
+}
