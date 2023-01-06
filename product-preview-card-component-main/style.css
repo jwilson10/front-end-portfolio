@@ -1,3 +1,27 @@
 body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background-color: hsl(30, 38%, 92%);
+}
+
+.card{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1em;
+}
+
+.photo{
+    max-width: 20em;
+    height:auto;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+.contentSection{
+    width:20em;
 }
