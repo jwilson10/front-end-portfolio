@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+body{
+    font-family: 'Overpass', sans-serif;
+    background-color: hsl(216, 12%, 8%);
+}
+
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card{
+    background-color: hsl(213, 19%, 18%);
+    width: 300px;
+    padding: 25px;
+    margin: 10%;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+#thankYouCard{
+    display: none;
+    text-align: center;
+}
+
+.star{
+    width:15px;
+}
+
+.iconCircle{
+    display: flex;
+    width:15px;
+    background-color: hsl(215,18%,21%);
+    border-radius:50%;
+    padding: 15px;
+    overflow: visible;
+}
+
+.header{
+    color: hsl(0, 0%, 100%);
+}
+
+.request{
+    color: hsl(216, 12%, 54%);
+    font-size: 15px;
+}
+
+#buttons{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+.rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Overpass', sans-serif;
+    border:none;
+    background-color: hsl(215,18%,21%);
+    color:hsl(216, 12%, 54%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size:15px;
+}
+
+.rating:hover{
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
+    color:hsl(0, 0%, 100%);
+}
+
+.selected{
+    background-color: hsl(216, 12%, 54%);
+    color: hsl(0, 0%, 100%);
+}
+
+.submit{
+    display: flex;
+    align-items: center;
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
+    font-kerning: 5px;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    color:hsl(0, 0%, 100%);
+    width:100%;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.submit:hover{
+    color: hsl(25, 97%, 53%);
+    background-color:hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.ratingSentence{
+    color: hsl(25, 97%, 53%);
+    margin-top: 30px;
+    background-color: hsl(215,18%,21%);
+    display: inline-block;
+    padding: 8px 15px 8px 15px;
+    border-radius:30px;
+}
+
+.attribution{
+    color: hsl(0, 0%, 100%);
+    font-size: 12px;
+}
+
+.attribution a{
+    color: hsl(25, 97%, 53%);
+}
+
+.attribution a:hover{
+    color: hsl(0, 0%, 100%);
+}
+
+.attribution a:visited{
+    color: hsl(216, 12%, 54%);
+}
