@@ -5,8 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Interactive rating component</title>
+
+
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -19,22 +23,27 @@
   <!-- Rating state start -->
 
   <div class="card">
-    <h1>How did we do?</h1>
 
-    <div>
-    Please let us know how we did with your support request. All feedback is appreciated 
-    to help us improve our offering!
+    <div class="iconCircle">
+      <img src="./images/icon-star.svg" class="star">
     </div>
+    
+    <h1 class="header">How did we do?</h1>
+
+    <p class="request">
+      Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+    </p>
 
     <form class="rateUs">
       <div class="buttons">
-        <input type="button" class="rating" value="1"></button>
-        <input type="button" class="rating" value="2"></button>
-        <input type="button" class="rating" value="3"></button>
-        <input type="button" class="rating" value="4"></button>
-        <input type="button" class="rating" value="5"></button>
+        <input id="rate1" type="button" class="rating" value="1"></button>
+        <input id="rate2" type="button" class="rating" value="2"></button>
+        <input id="rate3" type="button" class="rating" value="3"></button>
+        <input id="rate4" type="button" class="rating" value="4"></button>
+        <input id="rate5" type="button" class="rating" value="5"></button>
       </div>
-      <input type="submit" class="submit" value="Submit"/>
+      <input type="submit" class="submit" value="SUBMIT"/>
     </form>
   </div>
 
