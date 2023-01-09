@@ -7,7 +7,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
-  
   <title>Frontend Mentor | Interactive rating component</title>
 
 
@@ -22,7 +21,7 @@
 
   <!-- Rating state start -->
 
-  <div class="card">
+  <div id="ratingCard" class="card">
 
     <div class="iconCircle">
       <img src="./images/icon-star.svg" class="star">
@@ -35,8 +34,8 @@
       to help us improve our offering!
     </p>
 
-    <form class="rateUs">
-      <div class="buttons">
+    <form id="rateUs">
+      <div id="buttons">
         <input id="rate1" type="button" class="rating" value="1"></button>
         <input id="rate2" type="button" class="rating" value="2"></button>
         <input id="rate3" type="button" class="rating" value="3"></button>
@@ -51,7 +50,7 @@
 
   <!-- Thank you state start -->
 
-  <div hidden>
+  <div id="thankYouCard" hidden>
     You selected <!-- Add rating here --> out of 5
 
     Thank you!
@@ -68,4 +67,5 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+<script src="script.js"></script>
 </html>
