@@ -8,63 +8,56 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Interactive rating component</title>
-
-
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
   <!-- Rating state start -->
+  <div class="page">
+    <div id="ratingCard" class="card">
 
-  <div id="ratingCard" class="card">
-
-    <div class="iconCircle">
-      <img src="./images/icon-star.svg" class="star">
-    </div>
-    
-    <h1 class="header">How did we do?</h1>
-
-    <p class="request">
-      Please let us know how we did with your support request. All feedback is appreciated 
-      to help us improve our offering!
-    </p>
-
-    <form id="rateUs">
-      <div id="buttons">
-        <input id="rate1" type="button" class="rating" value="1"></button>
-        <input id="rate2" type="button" class="rating" value="2"></button>
-        <input id="rate3" type="button" class="rating" value="3"></button>
-        <input id="rate4" type="button" class="rating" value="4"></button>
-        <input id="rate5" type="button" class="rating" value="5"></button>
+      <div class="iconCircle">
+        <img src="./images/icon-star.svg" class="star">
       </div>
-      <input type="submit" class="submit" value="SUBMIT"/>
-    </form>
-  </div>
+      
+      <h1 class="header">How did we do?</h1>
 
-  <!-- Rating state end -->
+      <p class="request">
+        Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!
+      </p>
 
-  <!-- Thank you state start -->
+      <form id="rateUs">
+        <div id="buttons">
+          <input id="rate1" type="button" class="rating" value="1"></button>
+          <input id="rate2" type="button" class="rating" value="2"></button>
+          <input id="rate3" type="button" class="rating" value="3"></button>
+          <input id="rate4" type="button" class="rating" value="4"></button>
+          <input id="rate5" type="button" class="rating" value="5"></button>
+        </div>
+        <input type="submit" class="submit" value="SUBMIT"/>
+      </form>
+    </div>
 
-  <div id="thankYouCard" hidden>
-    You selected <!-- Add rating here --> out of 5
+    <!-- Rating state end -->
 
-    Thank you!
+    <!-- Thank you state start -->
 
-    We appreciate you taking the time to give a rating. If you ever need more support, 
-    don’t hesitate to get in touch!
-  </div>
+    <div id="thankYouCard" class="card">
+      <img src="./images/illustration-thank-you.svg">
+      <div class="ratingSentence"></div>
+      <h1 class="header">Thank you!</h1>
 
-  <!-- Thank you state end -->
+      <p class="request">We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!</p>
+    </div>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <!-- Thank you state end -->
+
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/jwilson10">J Wilson</a>.
+    </div>
   </div>
 </body>
 <script src="script.js"></script>

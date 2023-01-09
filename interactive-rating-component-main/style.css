@@ -2,6 +2,9 @@
 body{
     font-family: 'Overpass', sans-serif;
     background-color: hsl(216, 12%, 8%);
+}
+
+.page{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,9 +16,14 @@ body{
     width: 300px;
     padding: 25px;
     margin: 10%;
-    border-radius: 8%;
+    border-radius: 14px;
     display: flex;
     flex-direction: column;
+}
+
+#thankYouCard{
+    display: none;
+    text-align: center;
 }
 
 .star{
@@ -89,4 +97,30 @@ body{
     color: hsl(25, 97%, 53%);
     background-color:hsl(0, 0%, 100%);
     cursor: pointer;
+}
+
+.ratingSentence{
+    color: hsl(25, 97%, 53%);
+    margin-top: 30px;
+    background-color: hsl(215,18%,21%);
+    display: inline-block;
+    padding: 8px 15px 8px 15px;
+    border-radius:30px;
+}
+
+.attribution{
+    color: hsl(0, 0%, 100%);
+    font-size: 12px;
+}
+
+.attribution a{
+    color: hsl(25, 97%, 53%);
+}
+
+.attribution a:hover{
+    color: hsl(0, 0%, 100%);
+}
+
+.attribution a:visited{
+    color: hsl(216, 12%, 54%);
 }
