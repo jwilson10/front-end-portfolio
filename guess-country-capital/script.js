@@ -54,7 +54,7 @@ form.addEventListener("submit", check);
 
 const handleGoAgain = () =>{
     afterSubmit.style.display = "none";
-
+    capitalGuess.value = "";
     setCountry();
 }
 
