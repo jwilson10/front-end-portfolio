@@ -1,14 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Cambo&display=swap');
 body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     background-color: #8dab7f;
-    color: #1e2019;
+    color: #394032;
     font-family: 'Archivo', sans-serif;
 }
 
-h1{
+.heading{
     font-family: 'Cambo', serif;
+    font-size:40px;
+    padding-bottom: 20px;
+}
+
+div{
+    padding: 10px;
+}
+
+.card{
+    background-color: #cfee9e;
+    color: #394032;
+    border-radius: 15px;
+    width:400px;
+    box-shadow: 0px 0px 20px #394032;
+}
+
+.country{
+    font-size:28px;
+}
+
+.btn{
+    font-family: 'Archivo', sans-serif;
+    border-width: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    background-color: #394032;
+    color: #cfee9e;
+    font-size: 16px;
+}
+
+.btn:hover{
+    background-color: #8dab7f;
+    color: #394032;
+    cursor:pointer;
+}
+
+.countryForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    text-align: center;
+    margin:auto;
+}
+
+.formContent{
+    display:flex;
+    margin:auto;
+}
+
+label{
+    margin-top:15px;
+}
+
+#capitalGuess{
+    border-width:0px;
+    background-color: #394032;
+    color: #cfee9e;
+    font-family: 'Archivo', sans-serif;
+    font-size: 20px;
+    width:130px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 7px #8dab7f;
+}
+
+#capitalGuess:focus{
+    outline:none;
 }
 
 .afterSubmit{
     display: none;
+}
+
+.madeBy{
+    padding: 20px;
+    font-size:12px;
+}
+
+.madeBy a{
+    color: #cfee9e;
+    font-size:12px;
 }

@@ -10,24 +10,29 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to.... Guess That Capital!</h1>
+        <h1 class="heading">Welcome to.... Guess That Capital!</h1>
     </header>
     <main>
-        <div class="country"></div>
-        <form class="countryForm">
-            <label>Enter your gruess here..</label>
-            <input type="text" id="capitalGuess">
-            <input type="submit" value="Guess!">
-        </form>
-        <div class="afterSubmit">
-            <div class="gameCounter"></div>
-            <div class="rightWrong"></div>
-            <div class="answer"></div>
-            <button id="goAgain">Go Again!</button>
+        <div class="card">
+            <div class="country"></div>
+            <img id="countryFlag">
+            <form class="countryForm">
+                <label>Enter your guess here</label>
+                <div class="formContents">
+                    <input type="text" id="capitalGuess" autocomplete="off">
+                    <input class="btn" type="submit" value="Guess!">
+                </div>
+            </form>
+            <div class="afterSubmit">
+                <div class="gameCounter"></div>
+                <div class="rightWrong"></div>
+                <div class="answer"></div>
+                <button id="goAgain" class="btn">Go Again!</button>
+            </div>
         </div>
     </main>
     <footer>
-        <div class="madeBy">Made with ♡ by J Wilson</div>
+        <div class="madeBy">Made with ♡ by <a href="https://github.com/jwilson10">J Wilson</a></div>
     </footer>
 </body>
 <script src="script.js"></script>

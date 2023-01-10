@@ -1,7 +1,9 @@
-const countryPrompt = document.querySelector(".country");
-const form = document.querySelector(".countryForm");
-const guess = form.querySelector("#capitalGuess");
-const afterSubmit = document.querySelector(".afterSubmit");
+const card = document.querySelector(".card");
+const countryPrompt = card.querySelector(".country");
+const form = card.querySelector(".countryForm");
+const formContent = form.querySelector(".formContents");
+const guess = formContent.querySelector("#capitalGuess");
+const afterSubmit = card.querySelector(".afterSubmit");
 const gameCounter = afterSubmit.querySelector(".gameCounter");
 const rightWrong = afterSubmit.querySelector(".rightWrong");
 const answer = afterSubmit.querySelector(".answer");
@@ -12,7 +14,7 @@ let wins = 0;
 
 const apiFetch = async () =>{
     try {
-        const res = await fetch(`https://restcountries.com/v2/all?fields=name,capital`);
+        const res = await fetch(`https://restcountries.com/v2/all?fields=name,capital,flags`);
         return await res.json();
     } catch (err) {
         console.log(err);
@@ -26,6 +28,7 @@ const setCountry = async () =>{
     let currCountryIndex = Math.floor(Math.random() * countries.length) + 1;
     countryPrompt.innerText = `What is the capital of ${countries[currCountryIndex].name}?`
     country = countries[currCountryIndex];
+    console.log(country.capital);
 };
 
 setCountry();
@@ -47,6 +50,7 @@ form.addEventListener("submit", check);
 
 const handleGoAgain = () =>{
     afterSubmit.style.display = "none";
+
     setCountry();
 }
 
