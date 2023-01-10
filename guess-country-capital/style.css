@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Cambo&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
 body{
     display:flex;
     flex-direction: column;
@@ -8,6 +13,16 @@ body{
     color: #394032;
     font-family: 'Archivo', sans-serif;
 }
+
+::-moz-selection { /* Code for Firefox */
+    color: #cfee9e;
+    background: #394032;
+}
+  
+  ::selection {
+    color: #cfee9e;
+    background: #394032;
+  }
 
 .heading{
     font-family: 'Cambo', serif;
@@ -20,6 +35,9 @@ div{
 }
 
 .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #cfee9e;
     color: #394032;
     border-radius: 15px;
@@ -29,6 +47,21 @@ div{
 
 .country{
     font-size:28px;
+}
+
+.flagDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:300px;
+    height:200px;
+    text-align: center;
+}
+
+#flag{
+    height:100%;
+    width:auto;
+    max-width:100%;
 }
 
 .btn{
@@ -97,4 +130,20 @@ label{
 .madeBy a{
     color: #cfee9e;
     font-size:12px;
+}
+
+.madeBy a:hover{
+    color: #394032;
+}
+
+@media only screen and (max-width: 600px){
+
+    .card{
+        width: 300px;
+    }
+
+    #flag{
+        width: 200px;
+    }
+
 }

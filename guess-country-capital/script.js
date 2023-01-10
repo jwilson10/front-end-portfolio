@@ -1,4 +1,6 @@
 const card = document.querySelector(".card");
+const flagDiv = card.querySelector(".flagDiv");
+const flag = card.querySelector("#flag");
 const countryPrompt = card.querySelector(".country");
 const form = card.querySelector(".countryForm");
 const formContent = form.querySelector(".formContents");
@@ -27,6 +29,8 @@ const setCountry = async () =>{
     const countries = await apiFetch();
     let currCountryIndex = Math.floor(Math.random() * countries.length) + 1;
     countryPrompt.innerText = `What is the capital of ${countries[currCountryIndex].name}?`
+    flag.src = countries[currCountryIndex].flags.svg;
+    flag.alt = `Flag of ${countries[currCountryIndex].name}`;
     country = countries[currCountryIndex];
     console.log(country.capital);
 };
