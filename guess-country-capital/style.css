@@ -1,3 +1,14 @@
-#goAgain{
-    display:none;
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Cambo&display=swap');
+body{
+    background-color: #8dab7f;
+    color: #1e2019;
+    font-family: 'Archivo', sans-serif;
+}
+
+h1{
+    font-family: 'Cambo', serif;
+}
+
+.afterSubmit{
+    display: none;
 }
