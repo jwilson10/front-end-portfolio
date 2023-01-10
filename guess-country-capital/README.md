@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Vercel (TBD)
+- [Vercel](https://guess-that-country-psi.vercel.app/)
 
 ## My process
 
