@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Country Capital!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Cambo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="heading">Welcome to.... Guess That Capital!</h1>
+    </header>
+    <main>
+        <div class="card">
+            <div class="country"></div>
+            <div class="flagDiv"><img alt="Flag not Loaded" id="flag"></div>
+            <form class="countryForm">
+                <label>Enter your guess here</label>
+                <div class="formContents">
+                    <input type="text" id="capitalGuess" autocomplete="off">
+                    <input class="btn" type="submit" value="Guess!">
+                </div>
+            </form>
+            <div class="afterSubmit">
+                <div class="gameCounter"></div>
+                <div class="rightWrong"></div>
+                <div class="answer"></div>
+                <button id="goAgain" class="btn">Go Again!</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="madeBy">Made with ♡ by <a href="https://github.com/jwilson10">J Wilson</a></div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
