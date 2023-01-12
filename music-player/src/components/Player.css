@@ -1,0 +1,225 @@
+.player{
+    background-color: white;
+    padding-left:1.8rem;
+    padding-right:1.8rem;
+    padding-top: .5rem;
+    padding-bottom: 0rem;
+    border-radius: 2em;
+    border-color: papayawhip;
+    border-style: solid;
+}
+
+a:hover > * {
+    color: lightcoral;
+}
+
+.musicCover{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 3em;
+    margin:.8em;
+    box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.2);
+}
+
+.inner{
+    background-color: white;
+    padding: .5rem;
+    border-radius: 3%;
+}
+
+.component{
+    background-color: white;
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+}
+
+.subTitle{
+    text-align: center;
+}
+
+.buttonDiv{
+    width:fit-content;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+button{
+    min-width: 0;
+    flex: 2 1 0px;
+    text-align: center;
+    background-color: white;
+    border-style: none;
+    cursor: pointer;
+    text-align:center;
+}
+
+.btnHelper{
+    transition:1ms;
+}
+
+.btnHelper:hover * {
+    color: rgb(227, 195, 153);
+}
+
+.playButton{
+    transition: 1s;
+}
+
+.playButton:hover{
+    transform: scale(1.1);
+}
+
+#timeline{
+    background-color: bisque;
+    color: bisque;
+}
+
+input[type="range"]{
+    background-color: bisque;
+    height:5px;
+    width: 300px;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-progress{
+    background-color: burlywood;
+    height:5px;
+    border-right-width:5px;
+    border-right-style:solid;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    background-color: burlywood;
+    height:4px;
+    width:4px;
+    border-radius: 50%;
+    border-style:none;
+}
+
+input[type="range"]::-moz-range-thumb {
+    background-color: burlywood;
+    border-color: burlywood;
+    height:5px;
+    width:5px;
+    border-radius: 50%;
+    border-style:none;
+  }
+
+.timelineDiv:hover input[type="range"]{
+    background: rgb(253, 236, 215) !important;
+    cursor: pointer;
+}
+
+.timelineDiv:hover input[type="range"]::-webkit-slider-thumb{
+    background: #82541B !important;
+    border-color: #82541B !important;
+    border-radius:50%;
+    height:17px;
+    width:17px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.timelineDiv:hover input[type="range"]::-moz-range-progress{
+    background:#996320;
+    border-color:#996320;
+}
+
+.timelineDiv:hover input[type="range"]::-moz-range-thumb{
+    background: #82541B !important;
+    border-color: #82541B !important;
+    border-radius:50%;
+    height:9px;
+    width:9px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+  .label{
+    display:flex;
+    justify-content:space-between;
+  }
+
+  .volume{
+    width: 100px !important;
+    background-color: papayawhip;
+    height:5px !important;
+  }
+
+  .volume::-moz-range-progress {
+    background-color: #e8c89e; 
+    height:5px !important;
+  }
+
+  .volume::-moz-range-thumb {
+    background-color: burlywood !important;
+    border-radius:50%;
+    height:0px;
+    width:0px;
+    border-style: none;
+  }
+
+  
+  .volLabel{
+    width:100px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bottom{
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .bottomLeft{
+    display:flex;
+    justify-content: left;
+    text-align: left;
+    align-items:flex-start;
+    flex-direction: row;
+  }
+
+.tooltip {
+    cursor:pointer;
+}
+
+.tooltip::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: #82541B;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    color: papayawhip;
+    content: attr(data-tooltip); /* The main part of the code, determining the content of the pop-up prompt */
+    opacity: 0; /* Our element is transparent... */
+    padding: 7px 11px;
+    /*position: absolute;*/
+    z-index: 1;
+    top: 118%;
+    visibility: hidden; /* ...and hidden. */
+
+    transition: all 0.2s ease-in-out; /* To add some smoothness */
+}
+
+.tooltip:hover::after {
+    opacity: 1; /* Make it visible */
+    visibility: visible;
+}
+
+.isMuted{
+    flex-grow:0;
+    width:3.4rem;
+}
+
+.playPause{
+    flex-grow:0;
+    width:4.2em;
+}
