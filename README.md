@@ -14,6 +14,12 @@ This is a project from FrontEndMentor where I created a dynamic rating card via 
 
 Preview site: https://interactive-rating-component-alpha-eight.vercel.app/
 
+## music-player
+
+This is my pride and joy, a project that started off as a warm-up that turned into a project of its own. It is a react app that uses the use-audio library to play a selection of songs, with functional seek, fast forward/rewind, volume change, and song changes. It was a fascinating exercise in useEffect hooks in React.
+
+Preview site: https://music-player-beryl.vercel.app (NOTE: It will take a second for this page to load due to the useEffect hooks being dependent on the sound object loading -- due to the delay in loading for use-sound, it is hard to avoid. It is less noticeable in a dev build using npm start, but once deployed to Vercel it seems that this performance issue is exacerbated.)
+
 ## product-preview-card-component-main
 
 This is a project from FrontEndMentor where I created a static preview card with responsive design, following a set design schema.
