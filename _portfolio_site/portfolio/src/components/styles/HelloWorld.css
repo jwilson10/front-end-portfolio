@@ -1,0 +1,14 @@
+.introduction{
+    background-color: #1E2D2F;
+    margin-top:100px;
+    margin-left:30px;
+    padding:10px;
+    color: hsl(0, 1%, 91%);
+    width: 900px;
+    height: 310px;
+    font-size: 35px;
+    font-family: 'DM Serif Display', serif;
+    border-bottom-style:solid;
+    border-bottom-width: 10px;
+    border-color:#C57B57;
+}
