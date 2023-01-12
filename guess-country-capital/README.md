@@ -6,6 +6,7 @@ This is an exercise in API fetch requests, async functions, and promises. It loa
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -24,6 +25,10 @@ Users should be able to:
 - Enter their guess
 - See their number games played and number of wins
 - Start a new game after guessing
+
+## Screenshot
+
+![](screenshot.png)
 
 ### Links
 
