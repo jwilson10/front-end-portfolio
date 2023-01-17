@@ -1,0 +1,30 @@
+
+#videoWrapper {
+    margin:auto;
+    width:600px;
+    height:400px;
+}
+
+#videoWrapper:hover #videoOverlay{
+    display:block;
+    position: absolute;
+    top:300px;
+    bottom:0;
+    width: 600px;
+    height: 38px;
+    z-index: 100;
+    background-color: rgba(255,255,255,.4);
+}
+
+#videoOverlay {
+    display:none;
+}
+
+#video{
+    background: purple;
+}
+
+#playButton{
+    background:none;
+    border:none;
+}

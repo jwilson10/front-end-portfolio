@@ -4,8 +4,8 @@ import VideoPlayer from "./components/VideoPlayer";
 
 function App() {
   return (
-    <div>
-      <PlayerCard/>
+    <div className="wholePage">
+      <PlayerCard className="player"/>
     </div>
   );
 }

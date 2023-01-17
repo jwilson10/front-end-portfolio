@@ -1,5 +1,8 @@
-import earth from "../assets/earth_18MG.mp4"
+import earth from "../assets/earth_18MG.mp4";
 import {useState, useRef, useEffect} from "react";
+import {FaPlay, FaPause} from "react-icons/fa";
+import { IconContext } from "react-icons";
+import "./VideoPlayer.css";
 
 function VideoPlayer(){
     const [currentTime, setCurrentTime] = useState(0);
@@ -28,12 +31,19 @@ function VideoPlayer(){
     const handleSeek = (evt) =>{
         video.current.currentTime = evt.target.value;
         setCurrentTime(evt.target.value);
+        if(isPlaying){
+            video.current.play();
+        }
     }
 
-    return(<div>
-            <video ref={video} width="600" src={earth}/>
-            <div>
-                <button onClick={handlePlayback}>{isPlaying ? "Pause" : "Play"}</button>
+    return(<div id="videoWrapper">
+            <video id="video" ref={video} width="600" src={earth}/>
+            <div id="videoOverlay">
+                <button onClick={handlePlayback} id="playButton">
+                    <IconContext.Provider value={{ size: "2em" }}>
+                        {isPlaying ? <FaPause/>: <FaPlay/>}
+                    </IconContext.Provider>
+                </button>
                 <input type="range" value={currentTime} max={video.current.duration} onChange={handleSeek}/>
             </div>
         </div>);
