@@ -1,3 +1,8 @@
+.entireVideoPlayer{
+    margin:auto;
+    height:400px;
+    width:600px;
+}
 
 #videoWrapper {
     margin:auto;
@@ -6,14 +11,15 @@
 }
 
 #videoWrapper:hover #videoOverlay{
-    display:block;
+    display:flex;
+    align-items: center;
     position: absolute;
-    top:300px;
+    top:338px;
     bottom:0;
     width: 600px;
-    height: 38px;
+    height: 40px;
     z-index: 100;
-    background-color: rgba(255,255,255,.4);
+    background-color: rgba(255,255,255,.1);
 }
 
 #videoOverlay {
@@ -25,6 +31,40 @@
 }
 
 #playButton{
+    padding-left: 15px;
     background:none;
     border:none;
+    cursor: pointer;
+}
+
+#playButton:hover *{
+    fill: #CE4760;
+}
+
+#timeline{
+    background-color: white;
+}
+
+#timeline{
+    -webkit-appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 450px;
+    padding-left:30px;
+}
+
+#timeline::-webkit-slider-runnable-track{
+}
+
+#timeline::-moz-range-track{
+    background-color: #CE4760;
+}
+
+#timeline::-moz-range-thumb{
+    background-color:#DDF093;
+    border:none;
+}
+
+#timeline::-webkit-slider-thumb{
+    visibility: hidden;
 }

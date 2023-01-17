@@ -1,3 +1,17 @@
 .playerCard{
-    margin:auto;
+    margin: auto;
+    height:337px;
+    width:600px;
+    padding-top:40px;
+    padding-bottom:40px;
+    padding-left:40px;
+    padding-right:40px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
 }

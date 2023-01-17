@@ -36,15 +36,17 @@ function VideoPlayer(){
         }
     }
 
-    return(<div id="videoWrapper">
-            <video id="video" ref={video} width="600" src={earth}/>
-            <div id="videoOverlay">
-                <button onClick={handlePlayback} id="playButton">
-                    <IconContext.Provider value={{ size: "2em" }}>
-                        {isPlaying ? <FaPause/>: <FaPlay/>}
-                    </IconContext.Provider>
-                </button>
-                <input type="range" value={currentTime} max={video.current.duration} onChange={handleSeek}/>
+    return(<div className="entireVideoPlayer">
+                <div id="videoWrapper">
+                <video id="video" ref={video} width="600" src={earth}/>
+                <div id="videoOverlay">
+                    <button onClick={handlePlayback} id="playButton">
+                        <IconContext.Provider value={{ size: "2em", color:"white"}}>
+                            {isPlaying ? <FaPause/>: <FaPlay/>}
+                        </IconContext.Provider>
+                    </button>
+                    <input id="timeline" type="range" min="0" value={currentTime} max={video.current.duration} onChange={handleSeek}/>
+                </div>
             </div>
         </div>);
 }

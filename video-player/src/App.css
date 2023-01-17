@@ -1,11 +1,6 @@
 .wholePage{
-  margin:auto;
-  background-color: pink;
-}
-
-.player{
-  margin:auto;
-  width:300px;
-  height:400px;
-  background-color: pink;
+  height:100vh;
+  background-image: urL('assets/background.svg');
+  display: flex;
+  align-items: center;
 }
