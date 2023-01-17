@@ -5,12 +5,12 @@
  }
 
  ::selection{
-  background-color: #C57B57;
-  color:#F7DBA7;
+  background-color: #5C6784;
+  color:#A0EADE;
  }
 
 body {
-  background-color: hsl(0, 1%, 91%);
+  background-color: gainsboro;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

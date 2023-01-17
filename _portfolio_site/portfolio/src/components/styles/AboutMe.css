@@ -1,0 +1,53 @@
+.bodyDiv{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-left:30px;
+    margin-right:30px;
+    background-color: #B388EB;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bio{
+    width:50%;
+    text-align: center;
+}
+
+.resumeHeader{
+    font-family: 'DM Serif Display', serif;
+    font-size: 35px;
+    color:#FF3C38;
+    background-color: #A23E48;
+    margin-left: -20px;
+    margin-right:-20px;
+    padding-left:20px;
+    padding-bottom:5px;
+    border-bottom-width:10px;
+    border-bottom-style: solid;
+    border-bottom-color:#FF8C42;
+}
+
+.org{
+    font-family: 'DM Serif Display', serif;
+    font-size: 30px;
+    color:#4CB963;
+}
+
+.bioHeader{
+    font-family: 'DM Serif Display', serif;
+    font-size: 30px;
+    color:#1D263B;
+}
+
+.responsibilities, .time{
+    font-family: 'Jost', sans-serif;
+    color:#4CB963;
+    font-size: 20px;
+}
+
+.related{
+    font-family: 'DM Serif Display', serif;
+    font-size: 25px;
+    color:#4CB963;
+}
