@@ -1,0 +1,36 @@
+html{
+    display:flex;
+    justify-content:center;
+}
+
+body{
+    background-color: #14453D;
+}
+
+#minuteMarker{
+    fill: none;
+    stroke: #3D7068;
+    stroke-width: 20;
+    stroke-dasharray: .2, .8;
+    stroke-dashoffset: .1;
+}
+
+#hourMarker{
+    fill: none;
+    stroke: #43C59E;
+    stroke-width: 30;
+    stroke-dasharray: .2, 4.8;
+    stroke-dashoffset: .1;
+}
+
+#hourHand{
+    stroke:#43C59E;
+    stroke-width: 3;
+    stroke-linecap: round;
+}
+
+#minuteHand{
+    stroke:#43C59E;
+    stroke-width:2;
+    stroke-linecap: round;
+}

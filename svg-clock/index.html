@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <svg width="500" height="500" viewBox="-100 -100 200 200">
+        <circle id="minuteMarker" cx="0" cy="0" r="50" pathLength="60"/>
+        <circle id="hourMarker" cx="0" cy="0" r="50" pathLength="60"/>
+        <g id="hands">
+            <line id="minuteHand" x1="0" y1="0" x2="0" y2="-50"/>
+            <line id="hourHand" x1="0" y1="-12" x2="0" y2="-50"/>
+        </g>
+    </svg>
+</body>
+<script src="script.js"/>
+</html>
