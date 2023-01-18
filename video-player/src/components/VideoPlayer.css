@@ -1,14 +1,17 @@
 .entireVideoPlayer{
-    margin:auto;
     height:400px;
     width:600px;
 }
 
 #videoWrapper {
-    margin:auto;
-    width:600px;
-    height:400px;
+    width:90%;
+    height:90%;
 }
+
+#video{
+    width: 90%;
+}
+
 
 #videoWrapper:hover #videoOverlay{
     display:flex;
@@ -61,7 +64,7 @@
 }
 
 #timeline::-moz-range-thumb{
-    background-color:#DDF093;
+    background-color:whitesmoke;
     border:none;
 }
 

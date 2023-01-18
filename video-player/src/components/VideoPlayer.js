@@ -5,7 +5,7 @@ import { IconContext } from "react-icons";
 import "./VideoPlayer.css";
 
 function VideoPlayer(){
-    const [currentTime, setCurrentTime] = useState(0);
+    const [currentTime, setCurrentTime] = useState(0.0);
     const [isPlaying, setIsPlaying] = useState(false);
     const video = useRef(earth);
 
@@ -25,7 +25,6 @@ function VideoPlayer(){
             video.current.play();
             setIsPlaying(true);
         }
-        
     }
 
     const handleSeek = (evt) =>{
@@ -36,19 +35,17 @@ function VideoPlayer(){
         }
     }
 
-    return(<div className="entireVideoPlayer">
-                <div id="videoWrapper">
-                <video id="video" ref={video} width="600" src={earth}/>
-                <div id="videoOverlay">
-                    <button onClick={handlePlayback} id="playButton">
-                        <IconContext.Provider value={{ size: "2em", color:"white"}}>
-                            {isPlaying ? <FaPause/>: <FaPlay/>}
-                        </IconContext.Provider>
-                    </button>
-                    <input id="timeline" type="range" min="0" value={currentTime} max={video.current.duration} onChange={handleSeek}/>
-                </div>
-            </div>
-        </div>);
+    return(<div id="videoWrapper">
+                    <video id="video" ref={video} src={earth}/>
+                    <div id="videoOverlay">
+                        <button onClick={handlePlayback} id="playButton">
+                            <IconContext.Provider value={{ size: "2em", color:"whitesmoke"}}>
+                                {isPlaying ? <FaPause/>: <FaPlay/>}
+                            </IconContext.Provider>
+                        </button>
+                        <input id="timeline" type="range" min="0" value={currentTime} max={video.current.duration} step="0.01" onChange={handleSeek}/>
+                    </div>
+            </div>);
 }
 
 export default VideoPlayer;

@@ -3,4 +3,5 @@
   background-image: urL('assets/background.svg');
   display: flex;
   align-items: center;
+  justify-content: center;
 }
