@@ -11,11 +11,17 @@
     <svg width="500" height="500" viewBox="-100 -100 200 200">
         <circle id="minuteMarker" cx="0" cy="0" r="50" pathLength="60"/>
         <circle id="hourMarker" cx="0" cy="0" r="50" pathLength="60"/>
-        <g id="hands">
-            <line id="minuteHand" x1="0" y1="0" x2="0" y2="-50"/>
-            <line id="hourHand" x1="0" y1="-12" x2="0" y2="-50"/>
+        <g id="hourHand">
+            <line class="thinHand" x1="0" y1="0" x2="0" y2="-30"/>
+            <line class="thickHand" x1="0" y1="-12" x2="0" y2="-30"/>
         </g>
+        <g id="minuteHand">
+            <line class="thinHand" x1="0" y1="0" x2="0" y2="-50"/>
+            <line class="thickHand" x1="0" y1="-12" x2="0" y2="-50"/>
+        </g>
+        <line id="secondHand" x1="0" y1="0" x2="0" y2="-50"/>
+        <circle id="center" cx="0" cy="0" r="3"/>
     </svg>
 </body>
-<script src="script.js"/>
+<script src="script.js"></script>
 </html>

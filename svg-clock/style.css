@@ -23,14 +23,34 @@ body{
     stroke-dashoffset: .1;
 }
 
-#hourHand{
+#hourHand *{
+    stroke: #42B091;
+}
+
+#minuteHand *{
+    stroke: #43CCAB;
+}
+
+.thickHand{
     stroke:#43C59E;
-    stroke-width: 3;
+    stroke-width: 2;
     stroke-linecap: round;
 }
 
-#minuteHand{
+.thinHand{
     stroke:#43C59E;
-    stroke-width:2;
+    stroke-width:1;
     stroke-linecap: round;
+}
+
+#secondHand{
+    stroke:#42D3B7;
+    stroke-width:1;
+    stroke-linecap: round;
+}
+
+#center{
+    stroke:white;
+    fill:#42D3B7;
+    stroke-width:1;
 }
