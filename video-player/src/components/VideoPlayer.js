@@ -39,7 +39,7 @@ function VideoPlayer(){
                     <video id="video" ref={video} src={earth}/>
                     <div id="videoOverlay">
                         <button onClick={handlePlayback} id="playButton">
-                            <IconContext.Provider value={{ size: "2em", color:"whitesmoke"}}>
+                            <IconContext.Provider value={{ size: "1.9em", color:"whitesmoke"}}>
                                 {isPlaying ? <FaPause/>: <FaPlay/>}
                             </IconContext.Provider>
                         </button>
